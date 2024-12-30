@@ -1,0 +1,566 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0%;
+  
+  overflow-x: hidden;
+}
+header {
+  
+  height: 80vh;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.705),
+      rgba(0, 0, 0, 0)
+    ),
+    url("Image/Banner.png");
+  /* backgroundimage:url('https://kitentrepreneurs.com/wp-content/uploads/2021/05/nature-morte-balance-justice.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1% 84%;
+  color: white;
+  background-blend-mode: multiply;
+}
+
+nav {
+background-color: #00000075;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  z-index: 1000; /* Lo coloca por encima de otros elementos */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  /* identical to box height, or 26px */
+  text-align: center;
+height: 90px;;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+.logo {
+  
+  transform: translate(75px, 20px);
+  width: 77.71px;
+  height: 48px;
+  background-image: url(Image/LogoAb.png);
+
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+a {
+  color: white;
+
+  text-decoration: none;
+  font-size: large;
+}
+
+a:focus {
+  outline: none; /* Elimina el borde cuando el enlace es seleccionado */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  margin-left: 5%;
+  transform: translate(0px, 100px);
+
+}
+.title > h1 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+
+  color: #ffffff;
+}
+.title > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 130%;
+  /* or 36px */
+
+  color: #ffffff;
+}
+
+/* .text{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-color:#c78282;
+    width: 100%;
+    color: white;
+    height: 30vh;
+}
+.text.h1{
+    font-size:xx-large;
+
+}
+.text>p{
+} */
+button {
+  all: unset;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: #ae8586;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.somos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100dvw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background: #ffffff;
+  box-shadow: 0px 0px 17.3px 3px rgba(0, 0, 0, 0.05);
+}
+.cardLegend {
+  margin: 5% 10%;
+}
+.cardLegend > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: #32445a;
+}
+.cardLegend > h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000000;
+}
+
+li > strong {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  color: #0f0f0f;
+}
+.cardLegend > ul {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+
+  color: #0f0f0f;
+}
+
+.who > h1 {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 503px;
+  height: 62px;
+  left: calc(50% - 503px / 2 - 390.5px);
+  top: 839px;
+
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+
+  color: #000000;
+}
+.cardLegend > .btnCf {
+  background-color: #32445a;
+  width: fit-content;
+  padding: 5px 10px;
+  color: white;
+  margin-top: 10%;
+  /* Certificaciones */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+
+  text-align: center;
+
+  color: #fdfdfd;
+}
+.ofrecemos {
+  color: white;
+  background-color: #32445a;
+  height: 50dvh;
+  margin: 10% 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.offer {
+  display: block;
+}
+.leyenda > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 130%;
+
+  color: #ffffff;
+}
+.leyenda > h2 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+
+  color: #ffffff;
+}
+.leyenda {
+  height: 80%;
+}
+
+.offerImg {
+  position: relative;
+  width: 30%;
+  left: +5%;
+  transform: translateY(10%);
+  align-self: center;
+}
+
+.servicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.servicios > h1 {
+  /* margin-left: 5%;
+    margin-top: 10%;
+    width: 503px;
+    height: 62px;
+    left: calc(50% - 503px / 2 - 390.5px);
+    top: 839px;
+   */
+  justify-items: center;
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+
+  color: #000000;
+}
+.rectangles {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+
+  
+  
+}
+
+.cont {
+  padding: 2% 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: fit-content;
+  left: calc(50% - 418px / 2 - 1px);
+  background: #ffffff;
+  box-shadow: 0px 0px 17.3px 3px rgba(0, 0, 0, 0.05);
+}
+.rond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 106px;
+  height: 106px;
+  background: #ae8586;
+}
+.cont > p {
+  width: 100%;
+  height: 36px;
+  left: calc(50% - 218px / 2 - 455px);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #0f0f0f;
+}
+.expand>li{
+  text-align:start;
+}
+.expand{
+/* display:none; */
+overflow: hidden;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 130%;
+width: 96%;
+height: 80vh;
+max-height: 0;
+color: #0F0F0F;
+transition: max-height 0.5s ease; /* Animación de cambio de altura */
+}
+
+.expand.open {
+  max-height: 80vh; /* Un valor suficiente para contener el contenido */
+  /* Ajusta este valor según el contenido máximo esperado */
+}
+
+.expand>p{
+  text-align: center;
+}
+
+.extend {
+  cursor: pointer;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+extend img {
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+.extend img.rotated {
+  transform: rotate(180deg); /* Rotación de 180 grados */
+}
+
+.supervision {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin-bottom: 15%;
+}
+.text {
+  padding-left: 5%;
+}
+
+.text > h2 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+
+  color: #000000;
+}
+/* Espacio de Supervisión */
+
+.text > p {
+  width: 492px;
+  height: 108px;
+  left: calc(50% - 492px / 2 - 396px);
+  top: 3525px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 130%;
+  /* or 36px */
+
+  color: #000000;
+}
+.imgColor {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 50vw;
+}
+.color {
+  width: 100%;
+  height: 271px;
+  background: #f7f3f3;
+}
+
+/* Rectangle 15 */
+.imgColor > img {
+  position: absolute;
+
+  transform: translate(-85px, 75px);
+}
+
+.contact{
+  scroll-margin-top: 90px;
+  display: flex;
+}
+.contact>img{
+  width: 50%;
+  object-fit: contain;
+}
+.formColor{
+  background-color: #ae8586;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+padding-left: 6%;
+  
+}
+
+
+.coordColor{
+  color: white;
+  background-color: #ae8586;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
+  position:absolute;
+  transform: translate(0px, 26.75rem);
+  width: 448px;
+height: 194px;
+}
+
+.coord{
+display: flex;
+flex-direction: column;
+margin-left: 10%;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 130%;
+}
+
+.coord>h4{
+margin-bottom: 0px;
+}
+
+.tel{
+
+  display: flex;
+  align-items: center;
+font-family: 'Montserrat';
+font-style: regular;
+font-weight: 300;
+font-size: 18px;
+line-height: 130%;
+
+}
+
+.carre{
+ display:flex;
+ align-items: center;
+ justify-content: center;
+width: 62px;
+height: 53px;
+background: #32445A;
+border-radius: 10px;
+margin-right: 3%;
+}
+.formColor>h1{
+
+left: calc(50% - 532px/2 + 292px);
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 130%;
+color: #FFFFFF;
+}
+
+form>button{
+  background-color: #32445A;
+font-family: 'Montserrat';
+font-style:normal ;
+font-weight: 700;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+input{
+  width: 40%;
+  height: 70px;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+
+
+input::placeholder{
+  padding-left: 5%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  
+  color: #000000;
+  }
+
+textarea{
+width: 86%;
+height: 140px;
+margin-bottom: 4%;
+}
+
+
+textarea::placeholder{
+  padding-top: 2%;
+  padding-left: 2%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  
+  color: #000000;
+  }
