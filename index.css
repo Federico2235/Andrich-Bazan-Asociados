@@ -1,15 +1,14 @@
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0%;
-  
+
   overflow-x: hidden;
 }
+
 header {
-  
   height: 80vh;
   background: linear-gradient(
       to bottom right,
@@ -26,7 +25,7 @@ header {
 }
 
 nav {
-background-color: #00000075;
+  background-color: #00000075;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,25 +35,22 @@ background-color: #00000075;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 130%;
   /* identical to box height, or 26px */
   text-align: center;
-height: 90px;;
+  height: 90px;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-
 .logo {
-  
-  transform: translate(75px, 20px);
-  width: 77.71px;
-  height: 48px;
+  transform: translate(4.6875rem, 1.25rem);
+  width: 4.858125rem;
+  height: 3rem;
   background-image: url(Image/LogoAb.png);
-
 }
 
 nav > ul {
@@ -83,16 +79,16 @@ main {
 .title {
   display: flex;
   flex-direction: column;
-  font-size: xx-large;
+  /* font-size: xx-large; */
+  width: 100%;
   margin-left: 5%;
   transform: translate(0px, 100px);
-
 }
 .title > h1 {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 130%;
 
   color: #ffffff;
@@ -101,7 +97,7 @@ main {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 130%;
   /* or 36px */
 
@@ -127,14 +123,14 @@ main {
 button {
   all: unset;
   text-align: center;
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+  height: 3.125rem;
   background-color: #ae8586;
   color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .somos {
@@ -157,7 +153,7 @@ button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 130%;
   color: #32445a;
 }
@@ -165,7 +161,7 @@ button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 130%;
   color: #000000;
 }
@@ -174,7 +170,7 @@ li > strong {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
 
   color: #0f0f0f;
@@ -183,7 +179,7 @@ li > strong {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
 
   color: #0f0f0f;
@@ -192,15 +188,15 @@ li > strong {
 .who > h1 {
   margin-left: 5%;
   margin-top: 10%;
-  width: 503px;
-  height: 62px;
-  left: calc(50% - 503px / 2 - 390.5px);
-  top: 839px;
+  width: 31.4375rem;
+  height: 3.875rem;
+  left: calc(50% - 31.4375rem / 2 - 24.40625rem);
+  top: 52.4375rem;
 
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 130%;
 
   color: #000000;
@@ -208,7 +204,7 @@ li > strong {
 .cardLegend > .btnCf {
   background-color: #32445a;
   width: fit-content;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   color: white;
   margin-top: 10%;
   /* Certificaciones */
@@ -216,13 +212,17 @@ li > strong {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 130%;
 
   text-align: center;
 
   color: #fdfdfd;
 }
+/* 
+Tengo que seguir a parrtir de aca a cambiar de px a rem ,
+ y luego mediaqueries para que sea responsive */
+
 .ofrecemos {
   color: white;
   background-color: #32445a;
@@ -240,7 +240,7 @@ li > strong {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 130%;
 
   color: #ffffff;
@@ -249,7 +249,7 @@ li > strong {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 130%;
 
   color: #ffffff;
@@ -284,7 +284,7 @@ li > strong {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 130%;
 
   color: #000000;
@@ -294,9 +294,6 @@ li > strong {
   display: flex;
   justify-content: space-around;
   width: 90%;
-
-  
-  
 }
 
 .cont {
@@ -308,47 +305,47 @@ li > strong {
   justify-content: center;
   width: 25vw;
   height: fit-content;
-  left: calc(50% - 418px / 2 - 1px);
+  left: calc(50% - 26.125rem / 2 - 0.0625rem);
   background: #ffffff;
-  box-shadow: 0px 0px 17.3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0rem 0rem 1.08125rem 0.1875rem rgba(0, 0, 0, 0.05);
 }
 .rond {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 106px;
-  height: 106px;
+  width: 6.625rem;
+  height: 6.625rem;
   background: #ae8586;
 }
 .cont > p {
   width: 100%;
-  height: 36px;
+  height: 2.25rem;
   left: calc(50% - 218px / 2 - 455px);
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 130%;
   text-align: center;
   color: #0f0f0f;
 }
-.expand>li{
-  text-align:start;
+.expand > li {
+  text-align: start;
 }
-.expand{
-/* display:none; */
-overflow: hidden;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 130%;
-width: 96%;
-height: 80vh;
-max-height: 0;
-color: #0F0F0F;
-transition: max-height 0.5s ease; /* Animación de cambio de altura */
+.expand {
+  /* display:none; */
+  overflow: hidden;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 130%;
+  width:96%;
+  height: 80vh;
+  max-height: 0;
+  color: #0f0f0f;
+  transition: max-height 0.5s ease; /* Animación de cambio de altura */
 }
 
 .expand.open {
@@ -356,7 +353,7 @@ transition: max-height 0.5s ease; /* Animación de cambio de altura */
   /* Ajusta este valor según el contenido máximo esperado */
 }
 
-.expand>p{
+.expand > p {
   text-align: center;
 }
 
@@ -390,7 +387,7 @@ extend img {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 130%;
   /* or 62px */
 
@@ -399,15 +396,15 @@ extend img {
 /* Espacio de Supervisión */
 
 .text > p {
-  width: 492px;
-  height: 108px;
-  left: calc(50% - 492px / 2 - 396px);
-  top: 3525px;
+  width: 30.75rem;
+  height: 6.75rem;
+  left: calc(50% - 30.75rem / 2 - 24.75rem);
+  top: 220.3125rem;
 
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 130%;
   /* or 36px */
 
@@ -421,146 +418,241 @@ extend img {
 }
 .color {
   width: 100%;
-  height: 271px;
+  height: 16.9375rem;
   background: #f7f3f3;
 }
 
 /* Rectangle 15 */
 .imgColor > img {
   position: absolute;
-
-  transform: translate(-85px, 75px);
+  transform: translate(-5.3125rem, 4.6875rem);
 }
 
-.contact{
-  scroll-margin-top: 90px;
+.contact {
+  scroll-margin-top: 5.625rem;
   display: flex;
 }
-.contact>img{
+.contact > img {
   width: 50%;
   object-fit: contain;
 }
-.formColor{
+.formColor {
   background-color: #ae8586;
   width: 50%;
   display: flex;
   flex-direction: column;
-
-padding-left: 6%;
-  
+  justify-content: center;
+  padding-left: 6%;
 }
 
-
-.coordColor{
+.coordColor {
   color: white;
   background-color: #ae8586;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: flex-start;
-  position:absolute;
-  transform: translate(0px, 26.75rem);
-  width: 448px;
-height: 194px;
+  position: absolute;
+  transform: translate(0rem, 26.75rem);
+  width: 28rem;
+  height: 12.125rem;
 }
 
-.coord{
-display: flex;
-flex-direction: column;
-margin-left: 10%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 130%;
+.coord {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
 }
 
-.coord>h4{
-margin-bottom: 0px;
+.coord > h4 {
+  margin-bottom: 0px;
 }
 
-.tel{
-
+.tel {
   display: flex;
   align-items: center;
-font-family: 'Montserrat';
-font-style: regular;
-font-weight: 300;
-font-size: 18px;
-line-height: 130%;
-
+  font-family: "Montserrat";
+  font-style: regular;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 130%;
 }
 
-.carre{
- display:flex;
- align-items: center;
- justify-content: center;
-width: 62px;
-height: 53px;
-background: #32445A;
-border-radius: 10px;
-margin-right: 3%;
-}
-.formColor>h1{
-
-left: calc(50% - 532px/2 + 292px);
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 130%;
-color: #FFFFFF;
+.carre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.875rem;
+  height: 3.3125rem;
+  background: #32445a;
+  border-radius: 0.625rem;
+  margin-right: 0.1875rem;
 }
 
-form>button{
-  background-color: #32445A;
-font-family: 'Montserrat';
-font-style:normal ;
-font-weight: 700;
-font-size: 18px;
-line-height: 130%;
-/* or 23px */
-text-align: center;
-
-color: #FFFFFF;
-
-
-}
-
-input{
-  width: 40%;
-  height: 70px;
-  margin-right: 4%;
-  margin-bottom: 4%;
-}
-
-
-input::placeholder{
-  padding-left: 5%;
-  font-family: 'Montserrat';
+.formColor > h1 {
+  left: calc(50% - 33.25rem / 2 + 18.25rem);
+  font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 3rem;
   line-height: 130%;
-  
-  color: #000000;
-  }
-
-textarea{
-width: 86%;
-height: 140px;
-margin-bottom: 4%;
+  color: #ffffff;
 }
 
+form > button {
+  background-color: #32445a;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
 
-textarea::placeholder{
+input {
+  width: 40%;
+  height: 4.375rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+input::placeholder {
+  padding-left: 5%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #000000;
+}
+
+textarea {
+  width: 86%;
+  height: 8.75rem;
+  margin-bottom: 1.25rem;
+}
+
+textarea::placeholder {
   padding-top: 2%;
   padding-left: 2%;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 130%;
-  
   color: #000000;
+}
+
+
+@media screen and (max-width: 1400px) {
+  header {
+    height: 60vh;
   }
+
+  .title > h1 {
+ font-size: 2.25rem;
+
+  }
+  .title > p {
+
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 130%;
+  
+  }
+.who>h1{
+  font-size: 2.25rem;
+}
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: 50vh;
+  }
+  .title > h1 {
+    font-size: 1.85rem;
+   
+     }
+     .title > p {
+   
+       font-weight: 300;
+       font-size: 1rem;
+       line-height: 130%;
+     
+     }
+     .who>h1{
+      font-size: 1.85rem;
+    }
+
+    .cardLegend>ul{
+    font-size: 1rem;
+
+    }
+.cardLegend>h2{
+  font-size: 1.2rem;
+}
+.cardLegend>h3{
+  font-size: 1,2rem;
+}
+
+.cardLegend>.btnCf{
+  font-size: 1rem;
+}
+li>strong{
+  font-size:1rem ;
+}
+    }
+   
+
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50vh;
+  }
+
+  .title > h1 {
+    font-size: 1.50rem;
+   
+     }
+     .title > p {
+   
+       font-weight: 300;
+       font-size: 0.90rem;
+       line-height: 130%;
+     
+     }
+
+     .who>h1{
+      font-size: 1.50rem;
+    }
+
+    .cardLegend>ul{
+      font-size: 0.75rem;
+  
+      }
+  .cardLegend>h2{
+    font-size: 1rem;
+  }
+  .cardLegend>h3{
+    font-size: 1rem;
+  }
+
+  .cardLegend>.btnCf{
+    font-size: 0.75rem;
+  }
+  li>strong{
+    font-size:0.75rem ;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 30vh;
+  }
+}
