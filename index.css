@@ -10,6 +10,7 @@ body {
 
 header {
   height: 80vh;
+  width: 100%;
   background: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.705),
@@ -29,7 +30,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  width: 100vw; /* Asegura que ocupe todo el ancho */
   z-index: 1000; /* Lo coloca por encima de otros elementos */
 
   font-family: "Montserrat";
@@ -341,7 +342,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 130%;
-  width:96%;
+  width: 96%;
   height: 80vh;
   max-height: 0;
   color: #0f0f0f;
@@ -549,26 +550,57 @@ textarea::placeholder {
   color: #000000;
 }
 
-
 @media screen and (max-width: 1400px) {
   header {
     height: 60vh;
   }
 
   .title > h1 {
- font-size: 2.25rem;
-
+    font-size: 2.25rem;
   }
   .title > p {
-
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 130%;
-  
   }
-.who>h1{
-  font-size: 2.25rem;
+  .who > h1 {
+    font-size: 2.25rem;
+  }
+
+  .ofrecemos {
+    height: 40dvh;
+    margin: 10% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .leyenda > h2 {
+    font-size: 2.25rem;
+  }
+  .leyenda > p {
+    font-size: 1.5rem;
+  }
 }
+
+@media screen and (max-width: 1100px) {
+  .ofrecemos {
+    height: 30dvh;
+    margin: 10% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .leyenda > h2 {
+    margin-top: 5%;
+    font-size: 2rem;
+  }
+  .leyenda > p {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -577,82 +609,104 @@ textarea::placeholder {
   }
   .title > h1 {
     font-size: 1.85rem;
-   
-     }
-     .title > p {
-   
-       font-weight: 300;
-       font-size: 1rem;
-       line-height: 130%;
-     
-     }
-     .who>h1{
-      font-size: 1.85rem;
-    }
-
-    .cardLegend>ul{
+  }
+  .title > p {
+    font-weight: 300;
     font-size: 1rem;
+    line-height: 130%;
+  }
+  .who > h1 {
+    font-size: 1.85rem;
+  }
 
-    }
-.cardLegend>h2{
-  font-size: 1.2rem;
-}
-.cardLegend>h3{
-  font-size: 1,2rem;
-}
+  .cardLegend > ul {
+    font-size: 1rem;
+  }
+  .cardLegend > h2 {
+    font-size: 1.2rem;
+  }
+  .cardLegend > h3 {
+    font-size: 1, 2rem;
+  }
 
-.cardLegend>.btnCf{
-  font-size: 1rem;
-}
-li>strong{
-  font-size:1rem ;
-}
-    }
-   
+  .cardLegend > .btnCf {
+    font-size: 1rem;
+  }
+  li > strong {
+    font-size: 1rem;
+  }
 
+  .ofrecemos {
+    height: 25dvh;
+    margin: 10% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .leyenda > h2 {
+    font-size: 1.5rem;
+  }
+  .leyenda > p {
+    font-size: 1rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   header {
     height: 50vh;
+    width: 100%;
   }
 
   .title > h1 {
-    font-size: 1.50rem;
-   
-     }
-     .title > p {
-   
-       font-weight: 300;
-       font-size: 0.90rem;
-       line-height: 130%;
-     
-     }
-
-     .who>h1{
-      font-size: 1.50rem;
-    }
-
-    .cardLegend>ul{
-      font-size: 0.75rem;
-  
-      }
-  .cardLegend>h2{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
-  .cardLegend>h3{
-    font-size: 1rem;
+  .title > p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 130%;
   }
 
-  .cardLegend>.btnCf{
+  .who > h1 {
+    font-size: 1.5rem;
+  }
+
+  .cardLegend > ul {
     font-size: 0.75rem;
   }
-  li>strong{
-    font-size:0.75rem ;
+  .cardLegend > h2 {
+    font-size: 1rem;
+  }
+  .cardLegend > h3 {
+    font-size: 1rem;
   }
 
+  .cardLegend > .btnCf {
+    font-size: 0.75rem;
+  }
+  li > strong {
+    font-size: 0.75rem;
+  }
 }
 @media screen and (max-width: 600px) {
   header {
     height: 30vh;
+  }
+
+  .ofrecemos {
+    height: 17dvh;
+    margin: 10% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .leyenda > h2 {
+    font-size: 1rem;
+  }
+  .leyenda > p {
+    font-size: 0.75rem;
   }
 }
