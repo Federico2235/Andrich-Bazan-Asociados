@@ -30,7 +30,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Asegura que ocupe todo el ancho */
+  width: 100%; /* Asegura que ocupe todo el ancho */
   z-index: 1000; /* Lo coloca por encima de otros elementos */
 
   font-family: "Montserrat";
@@ -81,7 +81,7 @@ main {
   display: flex;
   flex-direction: column;
   /* font-size: xx-large; */
-  width: 100%;
+  width: 95%;
   margin-left: 5%;
   transform: translate(0px, 100px);
 }
@@ -305,7 +305,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   align-items: center;
   justify-content: center;
   width: 25vw;
-  height: fit-content;
+  height:fit-content;
   left: calc(50% - 26.125rem / 2 - 0.0625rem);
   background: #ffffff;
   box-shadow: 0rem 0rem 1.08125rem 0.1875rem rgba(0, 0, 0, 0.05);
@@ -377,7 +377,7 @@ extend img {
   margin-top: 10%;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 15%;
 }
 .text {
@@ -415,7 +415,7 @@ extend img {
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 50vw;
+  width: 50%;
 }
 .color {
   width: 100%;
@@ -426,7 +426,8 @@ extend img {
 /* Rectangle 15 */
 .imgColor > img {
   position: absolute;
-  transform: translate(-5.3125rem, 4.6875rem);
+  transform: translate(-5.3125rem, 10.6875rem);
+  width: 70%;
 }
 
 .contact {
@@ -550,6 +551,16 @@ textarea::placeholder {
   color: #000000;
 }
 
+@media screen and (max-width: 1690px){
+.imgColor > img {
+  position: absolute;
+  transform: translate(-5.3125rem, 7.6875rem);
+  width: 70%;
+}
+}
+
+
+
 @media screen and (max-width: 1400px) {
   header {
     height: 60vh;
@@ -576,15 +587,38 @@ textarea::placeholder {
     justify-content: space-evenly;
   }
 
+  .text p {
+    font-size: 1.25rem;
+  }
+
+  .imgColor>.fotNotas {
+    position: absolute;
+    transform: translate(-2.3125rem, 2.6875rem);
+    width: 66%;
+  }
+
   .leyenda > h2 {
     font-size: 2.25rem;
   }
   .leyenda > p {
     font-size: 1.5rem;
   }
+.expand{
+  height:100vh;
+}
+  .expand.open{
+    max-height: 180vh;
+  }
 }
 
+
+
+
 @media screen and (max-width: 1100px) {
+
+  header{
+    height: 55vh;
+  }
   .ofrecemos {
     height: 30dvh;
     margin: 10% 0%;
@@ -592,6 +626,20 @@ textarea::placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+     
+  }
+
+  .text h2{
+    font-size:2.75rem;
+  }
+.text p {
+  font-size: 1.25rem;
+}
+
+  .imgColor > .fotNotas{
+    position: absolute;
+    transform: translate(-2.3125rem, 1.6875rem);
+    width: 79%;
   }
 
   .leyenda > h2 {
@@ -600,10 +648,22 @@ textarea::placeholder {
   }
   .leyenda > p {
     font-size: 1.25rem;
+    margin-top: -5%;
   }
-}
+  
 
-@media screen and (max-width: 900px) {
+  .expand{
+    height:127vh;
+  }
+    .expand.open{
+      max-height: 180vh;
+    }
+  
+  }
+
+
+@media screen and (max-width: 975px) {
+  
   header {
     height: 50vh;
   }
@@ -644,6 +704,29 @@ textarea::placeholder {
     align-items: center;
     justify-content: space-evenly;
   }
+  .imgColor.fotNotas {
+    width: 43%;
+    position: absolute;
+    transform: 0,0;
+}
+
+  .imgColor {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+  }
+
+  
+
+
+
+  .text {
+    padding-left: 5%;
+  }
+
+
+
 
   .leyenda > h2 {
     font-size: 1.5rem;
@@ -655,7 +738,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 768px) {
   header {
-    height: 50vh;
+    height: 45vh;
     width: 100%;
   }
 
