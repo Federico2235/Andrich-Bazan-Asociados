@@ -11,11 +11,9 @@ body {
 header {
   height: 80vh;
   width: 100%;
-  background: linear-gradient(
-      to bottom right,
+  background: linear-gradient(to bottom right,
       rgba(0, 0, 0, 0.705),
-      rgba(0, 0, 0, 0)
-    ),
+      rgba(0, 0, 0, 0)),
     url("Image/Banner.png");
   /* backgroundimage:url('https://kitentrepreneurs.com/wp-content/uploads/2021/05/nature-morte-balance-justice.jpg'); */
   background-size: cover;
@@ -30,8 +28,10 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Asegura que ocupe todo el ancho */
-  z-index: 1000; /* Lo coloca por encima de otros elementos */
+  width: 100%;
+  /* Asegura que ocupe todo el ancho */
+  z-index: 1000;
+  /* Lo coloca por encima de otros elementos */
 
   font-family: "Montserrat";
   font-style: normal;
@@ -46,7 +46,9 @@ nav {
   justify-content: space-between;
   align-items: baseline;
 }
-
+nav a:first-of-type{
+    display: flex;
+} 
 .logo {
   transform: translate(4.6875rem, 1.25rem);
   width: 4.858125rem;
@@ -54,7 +56,7 @@ nav {
   background-image: url(Image/LogoAb.png);
 }
 
-nav > ul {
+nav>ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -69,7 +71,8 @@ a {
 }
 
 a:focus {
-  outline: none; /* Elimina el borde cuando el enlace es seleccionado */
+  outline: none;
+  /* Elimina el borde cuando el enlace es seleccionado */
 }
 
 main {
@@ -85,7 +88,8 @@ main {
   margin-left: 5%;
   transform: translate(0px, 100px);
 }
-.title > h1 {
+
+.title>h1 {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
@@ -94,7 +98,8 @@ main {
 
   color: #ffffff;
 }
-.title > p {
+
+.title>p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -147,10 +152,12 @@ button {
   background: #ffffff;
   box-shadow: 0px 0px 17.3px 3px rgba(0, 0, 0, 0.05);
 }
+
 .cardLegend {
   margin: 5% 10%;
 }
-.cardLegend > h2 {
+
+.cardLegend>h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -158,7 +165,8 @@ button {
   line-height: 130%;
   color: #32445a;
 }
-.cardLegend > h3 {
+
+.cardLegend>h3 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -167,7 +175,7 @@ button {
   color: #000000;
 }
 
-li > strong {
+li>strong {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -176,7 +184,8 @@ li > strong {
 
   color: #0f0f0f;
 }
-.cardLegend > ul {
+
+.cardLegend>ul {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -186,7 +195,7 @@ li > strong {
   color: #0f0f0f;
 }
 
-.who > h1 {
+.who>h1 {
   margin-left: 5%;
   margin-top: 10%;
   width: 31.4375rem;
@@ -202,7 +211,8 @@ li > strong {
 
   color: #000000;
 }
-.cardLegend > .btnCf {
+
+.cardLegend>.btnCf {
   background-color: #32445a;
   width: fit-content;
   padding: 0.3125rem 0.625rem;
@@ -220,6 +230,7 @@ li > strong {
 
   color: #fdfdfd;
 }
+
 /* 
 Tengo que seguir a parrtir de aca a cambiar de px a rem ,
  y luego mediaqueries para que sea responsive */
@@ -234,10 +245,12 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   align-items: center;
   justify-content: space-evenly;
 }
+
 .offer {
   display: block;
 }
-.leyenda > p {
+
+.leyenda>p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -246,7 +259,8 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
 
   color: #ffffff;
 }
-.leyenda > h2 {
+
+.leyenda>h2 {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 500;
@@ -255,6 +269,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
 
   color: #ffffff;
 }
+
 .leyenda {
   height: 80%;
 }
@@ -273,7 +288,8 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   flex-direction: column;
   justify-content: center;
 }
-.servicios > h1 {
+
+.servicios>h1 {
   /* margin-left: 5%;
     margin-top: 10%;
     width: 503px;
@@ -290,6 +306,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
 
   color: #000000;
 }
+
 .rectangles {
   margin-top: 5%;
   display: flex;
@@ -305,11 +322,12 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   align-items: center;
   justify-content: center;
   width: 25vw;
-  height:fit-content;
+  height: fit-content;
   left: calc(50% - 26.125rem / 2 - 0.0625rem);
   background: #ffffff;
   box-shadow: 0rem 0rem 1.08125rem 0.1875rem rgba(0, 0, 0, 0.05);
 }
+
 .rond {
   display: flex;
   align-items: center;
@@ -319,7 +337,8 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   height: 6.625rem;
   background: #ae8586;
 }
-.cont > p {
+
+.cont>p {
   width: 100%;
   height: 2.25rem;
   left: calc(50% - 218px / 2 - 455px);
@@ -331,9 +350,11 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   text-align: center;
   color: #0f0f0f;
 }
-.expand > li {
+
+.expand>li {
   text-align: start;
 }
+
 .expand {
   /* display:none; */
   overflow: hidden;
@@ -346,15 +367,17 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   height: 80vh;
   max-height: 0;
   color: #0f0f0f;
-  transition: max-height 0.5s ease; /* Animación de cambio de altura */
+  transition: max-height 0.5s ease;
+  /* Animación de cambio de altura */
 }
 
 .expand.open {
-  max-height: 80vh; /* Un valor suficiente para contener el contenido */
+  max-height: 80vh;
+  /* Un valor suficiente para contener el contenido */
   /* Ajusta este valor según el contenido máximo esperado */
 }
 
-.expand > p {
+.expand>p {
   text-align: center;
 }
 
@@ -366,11 +389,13 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
 }
 
 extend img {
-  transition: transform 0.3s ease; /* Animación suave */
+  transition: transform 0.3s ease;
+  /* Animación suave */
 }
 
 .extend img.rotated {
-  transform: rotate(180deg); /* Rotación de 180 grados */
+  transform: rotate(180deg);
+  /* Rotación de 180 grados */
 }
 
 .supervision {
@@ -380,11 +405,12 @@ extend img {
   width: 100%;
   margin-bottom: 15%;
 }
+
 .text {
   padding-left: 5%;
 }
 
-.text > h2 {
+.text>h2 {
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
   font-weight: 700;
@@ -394,9 +420,10 @@ extend img {
 
   color: #000000;
 }
+
 /* Espacio de Supervisión */
 
-.text > p {
+.text>p {
   width: 30.75rem;
   height: 6.75rem;
   left: calc(50% - 30.75rem / 2 - 24.75rem);
@@ -411,12 +438,14 @@ extend img {
 
   color: #000000;
 }
+
 .imgColor {
   position: relative;
   display: flex;
   align-items: flex-end;
   width: 50%;
 }
+
 .color {
   width: 100%;
   height: 16.9375rem;
@@ -424,7 +453,7 @@ extend img {
 }
 
 /* Rectangle 15 */
-.imgColor > img {
+.imgColor>img {
   position: absolute;
   transform: translate(-5.3125rem, 10.6875rem);
   width: 70%;
@@ -434,13 +463,22 @@ extend img {
   scroll-margin-top: 5.625rem;
   display: flex;
 }
-.contact > img {
+
+.contact>.img {
+  display: flex;
+  flex-direction: column-reverse;
   width: 50%;
-  object-fit: contain;
+  height: auto;
+  background-image: url(Image/Rectangle\ 17.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
 }
+
 .formColor {
   background-color: #ae8586;
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -455,9 +493,10 @@ extend img {
   align-items: baseline;
   justify-content: flex-start;
   position: absolute;
-  transform: translate(0rem, 26.75rem);
+  /* transform: translate(0rem, 26.75rem); */
   width: 28rem;
   height: 12.125rem;
+  margin-bottom: 50px;
 }
 
 .coord {
@@ -471,7 +510,7 @@ extend img {
   line-height: 130%;
 }
 
-.coord > h4 {
+.coord>h4 {
   margin-bottom: 0px;
 }
 
@@ -496,7 +535,7 @@ extend img {
   margin-right: 0.1875rem;
 }
 
-.formColor > h1 {
+.formColor>h1 {
   left: calc(50% - 33.25rem / 2 + 18.25rem);
   font-family: "Kaisei HarunoUmi";
   font-style: normal;
@@ -504,9 +543,10 @@ extend img {
   font-size: 3rem;
   line-height: 130%;
   color: #ffffff;
+  padding-top: 5%;
 }
 
-form > button {
+form>button {
   background-color: #32445a;
   font-family: "Montserrat";
   font-style: normal;
@@ -515,6 +555,7 @@ form > button {
   line-height: 130%;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 10%;
 }
 
 input {
@@ -535,7 +576,7 @@ input::placeholder {
 }
 
 textarea {
-  width: 86%;
+  width: 84%;
   height: 8.75rem;
   margin-bottom: 1.25rem;
 }
@@ -551,12 +592,12 @@ textarea::placeholder {
   color: #000000;
 }
 
-@media screen and (max-width: 1690px){
-.imgColor > img {
-  position: absolute;
-  transform: translate(-5.3125rem, 7.6875rem);
-  width: 70%;
-}
+@media screen and (max-width: 1690px) {
+  .imgColor>img {
+    position: absolute;
+    transform: translate(-5.3125rem, 7.6875rem);
+    width: 70%;
+  }
 }
 
 
@@ -566,15 +607,17 @@ textarea::placeholder {
     height: 60vh;
   }
 
-  .title > h1 {
+  .title>h1 {
     font-size: 2.25rem;
   }
-  .title > p {
+
+  .title>p {
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 130%;
   }
-  .who > h1 {
+
+  .who>h1 {
     font-size: 2.25rem;
   }
 
@@ -597,16 +640,19 @@ textarea::placeholder {
     width: 66%;
   }
 
-  .leyenda > h2 {
+  .leyenda>h2 {
     font-size: 2.25rem;
   }
-  .leyenda > p {
+
+  .leyenda>p {
     font-size: 1.5rem;
   }
-.expand{
-  height:100vh;
-}
-  .expand.open{
+
+  .expand {
+    height: 100vh;
+  }
+
+  .expand.open {
     max-height: 180vh;
   }
 }
@@ -616,9 +662,10 @@ textarea::placeholder {
 
 @media screen and (max-width: 1100px) {
 
-  header{
+  header {
     height: 55vh;
   }
+
   .ofrecemos {
     height: 30dvh;
     margin: 10% 0%;
@@ -626,76 +673,106 @@ textarea::placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-     
+
   }
 
-  .text h2{
-    font-size:2.75rem;
+  .text h2 {
+    font-size: 2.75rem;
   }
-.text p {
-  font-size: 1.25rem;
-}
 
-  .imgColor > .fotNotas{
+  .text p {
+    font-size: 1.25rem;
+  }
+
+  .imgColor>.fotNotas {
     position: absolute;
     transform: translate(-2.3125rem, 1.6875rem);
     width: 79%;
   }
 
-  .leyenda > h2 {
+  .leyenda>h2 {
     margin-top: 5%;
     font-size: 2rem;
   }
-  .leyenda > p {
+
+  .leyenda>p {
     font-size: 1.25rem;
     margin-top: -5%;
   }
-  
 
-  .expand{
-    height:127vh;
+
+  .expand {
+    height:45vh;
   }
-    .expand.open{
-      max-height: 180vh;
-    }
-  
+
+  .expand.open {
+    max-height: 180vh;
   }
+
+}
 
 
 @media screen and (max-width: 975px) {
-  
+
+nav a{
+  font-size: 1rem;
+}
+
   header {
     height: 50vh;
   }
-  .title > h1 {
+
+  .title>h1 {
     font-size: 1.85rem;
   }
-  .title > p {
+
+  .title>p {
     font-weight: 300;
     font-size: 1rem;
     line-height: 130%;
   }
-  .who > h1 {
+
+  .who>h1 {
     font-size: 1.85rem;
   }
 
-  .cardLegend > ul {
+  .cardLegend>ul {
     font-size: 1rem;
   }
-  .cardLegend > h2 {
+
+  .cardLegend>h2 {
     font-size: 1.2rem;
   }
-  .cardLegend > h3 {
+
+  .cardLegend>h3 {
     font-size: 1, 2rem;
   }
 
-  .cardLegend > .btnCf {
+  .cardLegend>.btnCf {
     font-size: 1rem;
   }
-  li > strong {
+ 
+  li>strong {
     font-size: 1rem;
   }
 
+  .rectangles {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    width: 90%;
+  }
+
+  .cont{
+      margin-bottom: 20px;
+    width: 50vw;
+  }
+
+  .expand {
+    height: 45vh;
+}
   .ofrecemos {
     height: 25dvh;
     margin: 10% 0%;
@@ -704,11 +781,12 @@ textarea::placeholder {
     align-items: center;
     justify-content: space-evenly;
   }
+
   .imgColor.fotNotas {
     width: 43%;
     position: absolute;
-    transform: 0,0;
-}
+    transform: 0, 0;
+  }
 
   .imgColor {
     position: relative;
@@ -717,7 +795,7 @@ textarea::placeholder {
     width: 50%;
   }
 
-  
+
 
 
 
@@ -728,10 +806,11 @@ textarea::placeholder {
 
 
 
-  .leyenda > h2 {
+  .leyenda>h2 {
     font-size: 1.5rem;
   }
-  .leyenda > p {
+
+  .leyenda>p {
     font-size: 1rem;
   }
 }
@@ -742,41 +821,67 @@ textarea::placeholder {
     width: 100%;
   }
 
-  .title > h1 {
+  .title>h1 {
     font-size: 1.5rem;
   }
-  .title > p {
+
+  .title>p {
     font-weight: 300;
     font-size: 0.9rem;
     line-height: 130%;
   }
 
-  .who > h1 {
+  .who>h1 {
     font-size: 1.5rem;
   }
 
-  .cardLegend > ul {
+  .cardLegend>ul {
     font-size: 0.75rem;
   }
-  .cardLegend > h2 {
-    font-size: 1rem;
-  }
-  .cardLegend > h3 {
+
+  .cardLegend>h2 {
     font-size: 1rem;
   }
 
-  .cardLegend > .btnCf {
+  .cardLegend>h3 {
+    font-size: 1rem;
+  }
+
+  .cardLegend>.btnCf {
     font-size: 0.75rem;
   }
-  li > strong {
+
+  li>strong {
     font-size: 0.75rem;
   }
 }
+
 @media screen and (max-width: 600px) {
+
+
   header {
-    height: 30vh;
+    height: 28vh;
+    width: 100%;
   }
 
+  .title>h1 {
+    font-size: 1.2rem;
+  }
+
+  .title>p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 130%;
+  }
+.somos{
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  width: 80%;
+  margin-bottom: 20px;
+}
   .ofrecemos {
     height: 17dvh;
     margin: 10% 0%;
@@ -786,10 +891,45 @@ textarea::placeholder {
     justify-content: space-evenly;
   }
 
-  .leyenda > h2 {
-    font-size: 1rem;
+  .leyenda>h2 {
+    margin-top: 20px;
+    font-size: 0.7rem;
   }
-  .leyenda > p {
-    font-size: 0.75rem;
+
+  .leyenda>p {
+    margin-top: 5px;
+    font-size: 0.55rem;
   }
+
+  .servicios h1{
+    font-size: 1.5rem;
+  }
+
+  .cont {
+    margin-bottom: 20px;
+    width: 74vw;
+}
+
+.rond img{
+  width: 45%;
+}
+
+.rond {
+  margin-top: 15px;
+  width: 4.625rem;
+  height: 4.625rem;
+}
+
+.cont p{
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+.expand{
+  font-size: 0.7rem;
+}
+.expand p{
+  font-size: 0.8rem;
+}
+
 }
