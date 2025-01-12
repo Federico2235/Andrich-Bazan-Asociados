@@ -44,16 +44,20 @@ nav {
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+
+  align-items: center;
 }
 nav a:first-of-type{
     display: flex;
+    margin-left: 5%;
 } 
 .logo {
-  transform: translate(4.6875rem, 1.25rem);
+  /* transform: translate(4.6875rem, 1.25rem); */
   width: 4.858125rem;
   height: 3rem;
   background-image: url(Image/LogoAb.png);
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
 nav>ul {
@@ -86,7 +90,7 @@ main {
   /* font-size: xx-large; */
   width: 95%;
   margin-left: 5%;
-  transform: translate(0px, 100px);
+  transform: translate(0px, 35%)
 }
 
 .title>h1 {
@@ -198,7 +202,7 @@ li>strong {
 .who>h1 {
   margin-left: 5%;
   margin-top: 10%;
-  width: 31.4375rem;
+  width: 95%;
   height: 3.875rem;
   left: calc(50% - 31.4375rem / 2 - 24.40625rem);
   top: 52.4375rem;
@@ -364,7 +368,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   font-size: 1.125rem;
   line-height: 130%;
   width: 96%;
-  height: 80vh;
+  height:80vh;
   max-height: 0;
   color: #0f0f0f;
   transition: max-height 0.5s ease;
@@ -598,6 +602,9 @@ textarea::placeholder {
     transform: translate(-5.3125rem, 7.6875rem);
     width: 70%;
   }
+  .expand {
+    height: 70vh;
+}
 }
 
 
@@ -649,7 +656,7 @@ textarea::placeholder {
   }
 
   .expand {
-    height: 100vh;
+    height: 90vh;
   }
 
   .expand.open {
@@ -702,7 +709,7 @@ textarea::placeholder {
 
 
   .expand {
-    height:45vh;
+    height:120vh;
   }
 
   .expand.open {
@@ -771,7 +778,7 @@ nav a{
   }
 
   .expand {
-    height: 45vh;
+    height: 70vh;
 }
   .ofrecemos {
     height: 25dvh;
@@ -796,9 +803,6 @@ nav a{
   }
 
 
-
-
-
   .text {
     padding-left: 5%;
   }
@@ -813,13 +817,16 @@ nav a{
   .leyenda>p {
     font-size: 1rem;
   }
-}
+
 
 @media screen and (max-width: 768px) {
   header {
     height: 45vh;
     width: 100%;
   }
+.title{
+  padding-top: 3%;
+}
 
   .title>h1 {
     font-size: 1.5rem;
@@ -856,13 +863,28 @@ nav a{
   }
 }
 
+.expand {
+  height: 90vh;
+}
+
 @media screen and (max-width: 600px) {
 
 
   header {
-    height: 28vh;
+    height: 32vh;
     width: 100%;
   }
+nav{
+  height: 70px;
+}
+nav> ul{
+  padding-right: 15px;
+  width: 71%;
+}
+
+nav a {
+  font-size: 0.75rem;
+}
 
   .title>h1 {
     font-size: 1.2rem;
@@ -873,6 +895,14 @@ nav a{
     font-size: 0.8rem;
     line-height: 130%;
   }
+  button {
+  
+    width: 9.5rem;
+    height: 2.125rem;
+font-size: 1rem;
+}
+
+
 .somos{
   flex-direction: column;
   align-items: center;
@@ -927,9 +957,85 @@ nav a{
 
 .expand{
   font-size: 0.7rem;
+  height: 45vh;
+
 }
 .expand p{
   font-size: 0.8rem;
+}
+
+.supervision {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imgColor{
+  width: 100%;
+
+}
+.imgColor>.fotNotas{
+  padding-left: 25%;
+  padding-bottom: 20%;
+transform: translate(none);
+}
+
+.color{
+  height: 12.9375rem;
+
+}
+.text h2 {
+  font-size: 1.5rem;
+}
+.text p {
+  font-size: 1rem;
+  width: 21.75rem;
+}
+.contact {
+  
+  display: flex;
+  flex-direction: column-reverse;
+  
+  
+}
+.contact>.img {
+  width: 100%;
+  height: 400px;
+
+}
+
+.formColor {
+  width: 90%;
+  padding-left: 10%;
+  ;
+
+
+}
+
+.formColor>h1 {
+  font-size: 2rem;
+  
+}
+input {
+  width: 40%;
+  height: 3.375rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+textarea {
+  width: 90%;
+  
+}
+.coordColor{
+  margin-bottom: 20px;
+  width: 90%;
+  height: 10.725rem;
+  justify-content:flex-end ;
+}
+.tel{
+  font-size: 1rem;
 }
 
 }
