@@ -609,7 +609,7 @@ textarea::placeholder {
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1490px) {
   header {
     height: 60vh;
   }
@@ -867,8 +867,7 @@ nav a{
   height: 90vh;
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 710px) {
 
   header {
     height: 32vh;
@@ -920,15 +919,21 @@ font-size: 1rem;
     align-items: center;
     justify-content: space-evenly;
   }
+  .offerImg {
+      width: 35%;
+    left: +1%;
+    transform: translateY(20%);
+  
+}
 
   .leyenda>h2 {
     margin-top: 20px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .leyenda>p {
     margin-top: 5px;
-    font-size: 0.55rem;
+    font-size: 0.65rem;
   }
 
   .servicios h1{
@@ -1038,4 +1043,268 @@ textarea {
   font-size: 1rem;
 }
 
+input::placeholder {
+  font-size: 0.9rem;
 }
+
+
+textarea::placeholder {
+  font-size: 0.9rem;
+}
+.text {
+  margin-bottom: 5%;
+}
+  
+
+
+@media screen and (max-width: 425px) {
+
+
+  header {
+    height: 32vh;
+    width: 100%;
+  }
+nav{
+  height: 70px;
+}
+nav> ul{
+  padding-right: 15px;
+  width: 71%;
+}
+
+nav a {
+  font-size: 0.75rem;
+}
+
+  .title>h1 {
+    font-size: 1.2rem;
+  }
+
+  .title>p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 130%;
+  }
+  button {
+  
+    width: 9.5rem;
+    height: 2.125rem;
+font-size: 1rem;
+}
+
+
+.somos{
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  width: 80%;
+  margin-bottom: 20px;
+}
+  .ofrecemos {
+    height: 17dvh;
+    margin: 10% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .offerImg {
+      width: 35%;
+    left: +1%;
+    transform: translateY(20%);
+  
+}
+
+  .leyenda>h2 {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+
+  .leyenda>p {
+    margin-top: 5px;
+    font-size: 0.65rem;
+  }
+
+  .servicios h1{
+    font-size: 1.5rem;
+  }
+
+  .cont {
+    margin-bottom: 20px;
+    width: 74vw;
+}
+
+.rond img{
+  width: 45%;
+}
+
+.rond {
+  margin-top: 15px;
+  width: 4.625rem;
+  height: 4.625rem;
+}
+
+.cont p{
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+.expand{
+  font-size: 0.7rem;
+  height: 45vh;
+
+}
+.expand p{
+  font-size: 0.8rem;
+}
+
+.supervision {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imgColor{
+  width: 100%;
+
+}
+.imgColor>.fotNotas{
+  padding-left: 25%;
+  padding-bottom: 20%;
+transform: translate(none);
+}
+
+.color{
+  height: 12.9375rem;
+
+}
+.text h2 {
+  font-size: 1.5rem;
+}
+.text p {
+  font-size: 1rem;
+  width: 21.75rem;
+}
+.contact {
+  
+  display: flex;
+  flex-direction: column-reverse;
+  
+  
+}
+.contact>.img {
+  width: 100%;
+  height: 400px;
+
+}
+
+.formColor {
+  width: 90%;
+  padding-left: 10%;
+  ;
+
+
+}
+
+.formColor>h1 {
+  font-size: 2rem;
+  
+}
+input {
+  width: 40%;
+  height: 3.375rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+textarea {
+  width: 90%;
+  
+}
+.coordColor{
+  margin-bottom: 20px;
+  width: 90%;
+  height: 10.725rem;
+  justify-content:flex-end ;
+}
+.tel{
+  font-size: 1rem;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+
+textarea::placeholder {
+  font-size: 0.9rem;
+}
+.text {
+  margin-bottom: 5%;
+}
+}
+
+@media (max-width: 375px) {
+ 
+nav {
+        height: 60px;
+    }
+  nav a {
+    font-size: 0.65rem;
+}
+
+.logo {
+  width: 4.858125rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+nav li {
+  padding-left: 5%;
+}
+
+.title {
+  padding-top: 1%;
+}
+.title>p{
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+button {
+  
+  width: 7.5rem;
+  height: 1.5rem;
+font-size: 0.8rem;
+}
+
+.ofrecemos {
+  height: 22dvh;
+}
+
+.expand {
+ 
+  height: 60vh;
+}
+
+.text p {
+  font-size: 1rem;
+  width: 20.75rem;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+
+textarea::placeholder {
+  font-size: 0.9rem;
+}
+
+
+}
+
+
