@@ -242,7 +242,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
 .ofrecemos {
   color: white;
   background-color: #32445a;
-  height: 50dvh;
+  height: 60dvh;
   margin: 10% 0%;
   display: flex;
   flex-direction: row;
@@ -368,7 +368,7 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
   font-size: 1.125rem;
   line-height: 130%;
   width: 96%;
-  height:80vh;
+  height:auto;
   max-height: 0;
   color: #0f0f0f;
   transition: max-height 0.5s ease;
@@ -376,7 +376,8 @@ Tengo que seguir a parrtir de aca a cambiar de px a rem ,
 }
 
 .expand.open {
-  max-height: 80vh;
+  max-height: none;
+  height: auto;
   /* Un valor suficiente para contener el contenido */
   /* Ajusta este valor según el contenido máximo esperado */
 }
@@ -629,7 +630,7 @@ textarea::placeholder {
   }
 
   .ofrecemos {
-    height: 40dvh;
+    height: 50dvh;
     margin: 10% 0%;
     display: flex;
     flex-direction: row;
@@ -674,7 +675,7 @@ textarea::placeholder {
   }
 
   .ofrecemos {
-    height: 30dvh;
+    height: 40dvh;
     margin: 10% 0%;
     display: flex;
     flex-direction: row;
@@ -715,6 +716,20 @@ textarea::placeholder {
   .expand.open {
     max-height: 180vh;
   }
+
+  .coordColor{
+    margin-bottom: 20px;
+    width: 35%;
+    height: 10.725rem;
+    justify-content:flex-end ;
+   
+  }
+  .tel{
+    font-size: 1rem;
+  }
+  
+
+
 
 }
 
@@ -769,8 +784,6 @@ nav a{
     flex-direction: column;
     align-items: center;
 }
-    width: 90%;
-  }
 
   .cont{
       margin-bottom: 20px;
@@ -781,13 +794,32 @@ nav a{
     height: 70vh;
 }
   .ofrecemos {
-    height: 25dvh;
+    height: 30dvh;
     margin: 10% 0%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
   }
+
+  .imgColor>.fotNotas {
+    position: absolute;
+    transform: translate(-5.3125rem, 1.6875rem);
+    width: 100%;
+}
+
+.color {
+    width: 100%;
+    height: 14.9375rem;
+}
+.text p {
+ margin-bottom: 0%;
+  width: 70%;
+}
+
+.text h2{
+  margin-bottom: 1%;
+}
 
   .imgColor.fotNotas {
     width: 43%;
@@ -817,7 +849,7 @@ nav a{
   .leyenda>p {
     font-size: 1rem;
   }
-
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -857,20 +889,27 @@ nav a{
   .cardLegend>.btnCf {
     font-size: 0.75rem;
   }
+  .imgColor>.fotNotas {
+    
+    transform: translate(-7.3125rem, 1.6875rem);
+    width: 131%;
+}
 
   li>strong {
     font-size: 0.75rem;
   }
-}
+
 
 .expand {
   height: 90vh;
 }
+}
+
 
 @media screen and (max-width: 710px) {
 
   header {
-    height: 32vh;
+    height: 36vh;
     width: 100%;
   }
 nav{
@@ -912,7 +951,7 @@ font-size: 1rem;
   margin-bottom: 20px;
 }
   .ofrecemos {
-    height: 17dvh;
+    height: 25dvh;
     margin: 10% 0%;
     display: flex;
     flex-direction: row;
@@ -928,12 +967,12 @@ font-size: 1rem;
 
   .leyenda>h2 {
     margin-top: 20px;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
   }
 
   .leyenda>p {
     margin-top: 5px;
-    font-size: 0.65rem;
+    font-size: 0.85rem;
   }
 
   .servicios h1{
@@ -980,10 +1019,11 @@ font-size: 1rem;
   width: 100%;
 
 }
-.imgColor>.fotNotas{
-  padding-left: 25%;
-  padding-bottom: 20%;
-transform: translate(none);
+.imgColor >.fotNotas{
+  padding-left: 60%;
+  padding-bottom: 15%;
+  width: 50%;
+  /* transform: translate(6rem, 11rem); */
 }
 
 .color{
@@ -1013,9 +1053,7 @@ transform: translate(none);
 .formColor {
   width: 90%;
   padding-left: 10%;
-  ;
-
-
+  
 }
 
 .formColor>h1 {
@@ -1055,7 +1093,7 @@ textarea::placeholder {
   margin-bottom: 5%;
 }
   
-
+}
 
 @media screen and (max-width: 425px) {
 
