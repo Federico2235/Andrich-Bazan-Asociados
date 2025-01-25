@@ -529,6 +529,11 @@ extend img {
   line-height: 130%;
 }
 
+.tel>p{
+  margin-left: 3%;
+}
+
+
 .carre {
   display: flex;
   align-items: center;
@@ -669,10 +674,10 @@ textarea::placeholder {
 
 
 @media screen and (max-width: 1100px) {
-
+/* 
   header {
-    height: 55vh;
-  }
+    height: vh;
+  } */
 
   .ofrecemos {
     height: 40dvh;
@@ -718,16 +723,41 @@ textarea::placeholder {
   }
 
   .coordColor{
-    margin-bottom: 20px;
-    width: 35%;
-    height: 10.725rem;
-    justify-content:flex-end ;
-   
-  }
-  .tel{
-    font-size: 1rem;
+    width: 40%;
   }
   
+  .coord{
+    width: fit-content;
+    margin-left: 5%;
+  }
+  
+  .coord>h4 {
+    margin-bottom: 0px;
+    width: fit-content;
+    
+  }
+  
+  .fotMail{
+    width:100%;
+    
+  }
+  
+  /* .tel {
+  
+    width: 100%;
+    font-size: 0.95rem;
+  }
+   */
+  .carre{
+    width: 4.2rem;
+    height: 3.1rem;
+    
+  
+  }
+  /* .carre img{
+    width: 60%;
+  }
+   */
 
 
 
@@ -802,6 +832,10 @@ nav a{
     justify-content: space-evenly;
   }
 
+.offerImg{
+  width: 25%;
+}
+
   .imgColor>.fotNotas {
     position: absolute;
     transform: translate(-5.3125rem, 1.6875rem);
@@ -849,11 +883,19 @@ nav a{
   .leyenda>p {
     font-size: 1rem;
   }
+
+  .coordColor{
+    margin-bottom: 27px;
+    width: 40%;
+   
+   
+  }
+
 }
 
 @media screen and (max-width: 768px) {
   header {
-    height: 45vh;
+    height: 50vh;
     width: 100%;
   }
 .title{
@@ -889,6 +931,12 @@ nav a{
   .cardLegend>.btnCf {
     font-size: 0.75rem;
   }
+
+  .offerImg {
+    width: 30%;
+    transform: translateY(12%);
+}
+
   .imgColor>.fotNotas {
     
     transform: translate(-7.3125rem, 1.6875rem);
@@ -909,7 +957,7 @@ nav a{
 @media screen and (max-width: 710px) {
 
   header {
-    height: 36vh;
+    height: 40vh;
     width: 100%;
   }
 nav{
@@ -924,6 +972,14 @@ nav a {
   font-size: 0.75rem;
 }
 
+.logo{
+  width: 4.858125rem;
+  height: 2.5rem;
+  background-image: url(Image/LogoAb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
   .title>h1 {
     font-size: 1.2rem;
   }
@@ -1015,13 +1071,21 @@ font-size: 1rem;
   align-items: flex-start;
 }
 
+
+.ofrecemos{
+  height: 30dvh;
+
+}
+
 .imgColor{
   width: 100%;
 
+
 }
+
 .imgColor >.fotNotas{
   padding-left: 60%;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
   width: 50%;
   /* transform: translate(6rem, 11rem); */
 }
@@ -1095,12 +1159,47 @@ textarea::placeholder {
   
 }
 
+
+@media screen and (max-width:610px){
+
+
+  .imgColor >.fotNotas{
+    padding-left: 63%;
+    padding-bottom: 16%;
+    width: 50%;
+    /* transform: translate(6rem, 11rem); */
+  }
+  
+  .color{
+    height: 10.9375rem;
+  
+  }
+
+
+
+}
+
+@media screen and (max-width: 500px){
+  .leyenda>p {
+   
+    font-size: 0.75rem;
+}
+
+.offerImg {
+  /* width: 35%;
+  left: +1%; */
+  transform: translateY(25%);
+}
+
+}
+
 @media screen and (max-width: 425px) {
 
 
   header {
-    height: 32vh;
+    height: 40vh;
     width: 100%;
+    
   }
 nav{
   height: 70px;
@@ -1111,6 +1210,7 @@ nav> ul{
 }
 
 nav a {
+  margin-right: -10%;
   font-size: 0.75rem;
 }
 
@@ -1209,14 +1309,16 @@ font-size: 1rem;
   width: 100%;
 
 }
-.imgColor>.fotNotas{
-  padding-left: 25%;
-  padding-bottom: 20%;
-transform: translate(none);
+
+  .imgColor>.fotNotas {
+    padding-left: 61%;
+    padding-bottom: 27%;
+    width: 60%;
 }
 
+
 .color{
-  height: 12.9375rem;
+  height: 10.9375rem;
 
 }
 .text h2 {
@@ -1272,6 +1374,7 @@ textarea {
   font-size: 1rem;
 }
 
+
 input::placeholder {
   font-size: 0.9rem;
 }
@@ -1285,8 +1388,13 @@ textarea::placeholder {
 }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
+
  
+  header {
+    height: 29vh;
+    width: 100%;
+}
 nav {
         height: 60px;
     }
@@ -1330,7 +1438,14 @@ font-size: 0.8rem;
 
 .text p {
   font-size: 1rem;
-  width: 20.75rem;
+  width: 100%;
+}
+
+.coordColor {
+  margin-bottom: 20px;
+  width: 81%;
+  height: 10.725rem;
+  justify-content: flex-end;
 }
 
 input::placeholder {
@@ -1342,7 +1457,49 @@ textarea::placeholder {
   font-size: 0.9rem;
 }
 
+.coordColor{
+  width: 100%;
+}
 
+.coord{
+  width: fit-content;
+  margin-left: 5%;
+}
+
+.coord>h4 {
+  margin-bottom: 0px;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.fotMail{
+  width:90%;
+  
+}
+
+.tel {
+
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.carre{
+  width: 4.2rem;
+  height: 3.1rem;
+  
+
+}
+.carre img{
+  width: 60%;
+}
+}
+
+@media screen and (max-width: 333px) {
+
+  form> input{
+    width: 90%;
+  }
+  
 }
 
 
