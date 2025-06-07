@@ -852,9 +852,7 @@ border-radius: 25%;
   margin-top: 1rem;
 }
 
-.phone-group a {
-  font-size: 1rem;
-}
+
 .contact-person {
   display: flex;
   flex-direction: column;
