@@ -141,7 +141,7 @@
                 <div class="card">
                     <img src="Image/ABUDARHAM 1.png" alt="">
                     <div class="cardLegend">
-                        <h2>Tomás<br class="line-break">Abudarham</h2>
+                        <h2>Tomás <br class="line-break">Abudarham</h2>
                         <h3>Médico (UBA)</h3>
                         <div id="expandC3" class="expand">
                             <ul>
@@ -437,7 +437,7 @@
                 <h1>¡Contactanos!</h1>
                 <P>Si necesitas asesoría especializada o más información sobre nuestros servicios, no dudes en
                     contactarnos:</P>
-                <form action="">
+                <!-- <form action="">
                     <input type="text" placeholder="Nombre">
                     <input type="text" placeholder="Apellido">
                     <br>
@@ -456,8 +456,18 @@
                             <img src="Image/Group.svg" alt="Correo">
                         </a>
                     </div>
-                </form>
+                </form> -->
+ <div class="contact-links">
+  <a href="tel:+34123456789" aria-label="Teléfono">
+    <img src="Image/🦆 icon _phone_.svg" alt="Teléfono" style="margin-right: 0.5rem;">
+    34123456789
+  </a>
 
+  <a href="#" id="email-link" aria-label="Correo">
+    <img src="Image/Group.svg" alt="Correo" style="margin-right: 0.5rem;">
+    contacto@consultorapsicojuridica.com
+  </a>
+</div>
 
             </div>
 
@@ -468,6 +478,13 @@
 </body>
 <!-- Bootstrap JS Bundle (incluye Popper) -->
 <script src="app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const emailLink = document.getElementById("email-link");
+    const email = "contacto" + "@" + "consultorapsicojuridica.com";
+    emailLink.setAttribute("href", "mailto:" + email);
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
