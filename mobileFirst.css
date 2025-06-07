@@ -1,0 +1,1213 @@
+/* ==========================
+   RESET / BASE STYLES
+========================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0%;
+
+  overflow-x: hidden;
+}
+
+/* ==========================
+   HEADER Y NAVBAR
+========================== */
+
+header {
+  height: 35vh;
+  width: 100%;
+  padding: 2rem 1rem;
+  color: white;
+  background-blend-mode: multiply;
+  background: url("Image/Banner.png");
+  background-position: 35% 84%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  margin-top: -1% !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  flex-direction: row; /* menú horizontal para que logo y toggler estén en línea */
+  align-items: center; /* centrado vertical */
+  justify-content: space-between; /* logo a la izquierda, toggler a la derecha */
+  background-color: #00000045;
+  font-size: 1rem;
+  z-index: 1030; /* para que quede encima */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+nav > ul > li {
+  margin: 0.5rem 0;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #edc9c9;
+}
+.navbar-toggler {
+  flex-shrink: 0;
+  border: none;
+  width: 20% !important;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  margin-right: 0.75rem;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Fondo negro SIEMPRE presente */
+.collapse.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.85); /* o negro sólido: #000 */
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 0;
+
+  /* Estos dos ocultan el contenido cuando está colapsado */
+  /* max-height: 0;
+  overflow: hidden;
+  transition: none; */
+}
+
+/* Al abrir el menú */
+.collapse.navbar-collapse.show {
+  max-height: fit-content; /* ajustá según la altura de tu menú */
+  overflow: visible;
+}
+
+nav.navbar {
+  height: 70px;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.nav-item {
+  margin: 0.5rem 0;
+}
+
+.logo {
+  margin-left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(Image/LogoAb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  margin-top: 15%;
+  /* transform: translate(0px, 35%); */
+}
+
+.title > h1 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 130%;
+
+  color: #ffffff;
+}
+
+.title > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 130%;
+  /* or 36px */
+
+  color: #ffffff;
+}
+
+a {
+  color: white;
+
+  text-decoration: none;
+  font-size: large;
+}
+
+button {
+  all: unset;
+  text-align: center;
+  width: 8.5rem;
+  height: 1.75rem;
+  background-color: #ae8586;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+/* ==========================
+   SECCIÓN QUIÉNES SOMOS
+========================== */
+
+.somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* width: 100dvw; */
+}
+.presentation {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 7%;
+}
+
+.presentation > h1 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 130%;
+
+  color: #000000;
+}
+.whoDes {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background: #ffffff;
+  box-shadow: 0px 0px 17.3px 3px rgba(0, 0, 0, 0.05);
+  margin: 1rem 1rem;
+}
+
+.extendC img.rotated {
+  transform: rotate(180deg);
+  /* Rotación de 180 grados */
+}
+.cardLegend {
+  margin: 5% 10%;
+}
+
+.line-break {
+  display: none;
+}
+.cardLegend > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 130%;
+  color: #32445a;
+}
+
+.cardLegend > h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #000000;
+}
+
+li > strong {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+
+  color: #0f0f0f;
+}
+
+.cardLegend > ul {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 150%;
+
+  color: #0f0f0f;
+}
+
+.cardLegend .btnCf {
+  background-color: #32445a;
+  width: fit-content;
+  padding: 0.3125rem 0.625rem;
+  color: white;
+  margin-top: 10%;
+  /* Certificaciones */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 130%;
+
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fdfdfd;
+}
+.expand > li {
+  text-align: start;
+}
+
+.expand {
+  /* display:none; */
+  overflow: hidden;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 130%;
+  width: 96%;
+  height: auto;
+  max-height: 0;
+  color: #0f0f0f;
+  transition: max-height 0.5s ease;
+  /* Animación de cambio de altura */
+}
+
+.expand.open {
+  max-height: none;
+  height: auto;
+  /* Un valor suficiente para contener el contenido */
+  /* Ajusta este valor según el contenido máximo esperado */
+}
+
+.expand > p {
+  text-align: center;
+}
+
+.extend {
+  cursor: pointer;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+extend img {
+  transition: transform 0.3s ease;
+  /* Animación suave */
+}
+
+.extend img.rotated {
+  transform: rotate(180deg);
+  /* Rotación de 180 grados */
+}
+
+.vitrina {
+  background-color: #32445a;
+  /* height: 25rem;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* overflow: hidden; */
+  align-items: anchor-center;
+  margin-bottom: 5rem;
+  overflow: visible;
+  position: relative;
+  margin-top: 9%;
+  padding-top: 3rem;
+}
+.contenido {
+  height: fit-content;
+  color: white;
+  /* padding-left: 5%; */
+  max-width: 100%;
+  padding: 1rem 2rem;
+}
+.contenido > h1 {
+  top: 1707px;
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 130%;
+  text-align: center;
+}
+
+.contenido > p {
+  /* Asesoramiento estratégico a estudios jurídicos y abogados en diversas cuestiones vinculadas al campo de la psicología jurídica en los fueros civil, comercial, familiar, laboral y penal. Además, brindamos asesoría pericial forense en diferentes áreas del derecho, abarcando: */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  text-align: center;
+}
+
+.titleC {
+  background-color: #ae8586;
+  z-index: 10;
+  transform: translateX(-20%);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  /* identical to box height, or 29px */
+  text-align: center;
+  color: #ffffff;
+  width: 64%;
+}
+
+.btns {
+  display: flex;
+}
+
+.carousel-wrapper {
+  /* position: relative; */
+  width: 95%;
+  overflow: visible;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.carousel-outer {
+  overflow: visible; /* Permite que las .cardCar sobresalgan visualmente */
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  scroll-snap-align: start;
+  scroll-padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transform: translateY(0.5em);
+  /* align-items: stretch; */
+  scrollbar-width: none; /* Firefox */
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.carousel-track::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 2rem; /* igual que el margen o gap */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+.cardCar {
+  flex: 0 0 auto;
+  min-width: 90%;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  height: 100%;
+  padding-bottom: 5rem;
+  z-index: 5;
+  position: relative;
+}
+
+.carousel-btn {
+  background-color: #32445a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.carousel-btn:hover {
+  background-color: #4f6275;
+}
+
+.ofrecemos {
+  color: white;
+  background-color: #32445a;
+  height: 60dvh;
+  margin: 10% 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.offer {
+  display: block;
+}
+
+.leyenda > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.leyenda > h2 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 130%;
+
+  color: #ffffff;
+}
+
+.leyenda {
+  height: 80%;
+}
+
+.offerImg {
+  position: relative;
+  width: 30%;
+  left: +5%;
+  transform: translateY(10%);
+  align-self: center;
+}
+
+.servicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicios > h1 {
+  /* margin-left: 5%;
+    margin-top: 10%;
+    width: 503px;
+    height: 62px;
+    left: calc(50% - 503px / 2 - 390.5px);
+    top: 839px;
+   */
+  text-align: center;
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 130%;
+
+  color: #000000;
+}
+
+.rectangles {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cont {
+  padding: 5% 2%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: fit-content;
+  /* left: calc(50% - 26.125rem / 2 - 0.0625rem); */
+  background: #ffffff;
+  box-shadow: 0rem 0rem 1.08125rem 0.1875rem rgba(0, 0, 0, 0.05);
+}
+.cont > p {
+  width: 100%;
+  height: 0.8rem;
+  left: calc(50% - 218px / 2 - 455px);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 130%;
+  text-align: center;
+  color: #0f0f0f;
+}
+.rond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 4.625rem;
+  height: 4.625rem;
+  margin-bottom: 1rem;
+  background: #ae8586;
+}
+.rond > img {
+  width: 50%;
+}
+/* .rond >p{
+  font-size: 0.5rem;
+} */
+
+.expand > li {
+  text-align: start;
+}
+
+.expand {
+  /* display:none; */
+  margin-top: 1rem;
+  overflow: hidden;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 130%;
+  width: 96%;
+  height: auto;
+  max-height: 0;
+  color: #0f0f0f;
+  transition: max-height 0.5s ease;
+  /* Animación de cambio de altura */
+}
+
+.expand.open {
+  max-height: none;
+  height: auto;
+  /* Un valor suficiente para contener el contenido */
+  /* Ajusta este valor según el contenido máximo esperado */
+}
+
+.expand > p {
+  text-align: center;
+}
+
+.extend {
+  cursor: pointer;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+extend img {
+  transition: transform 0.3s ease;
+  /* Animación suave */
+}
+
+.extend img.rotated {
+  transform: rotate(180deg);
+  /* Rotación de 180 grados */
+}
+
+.supervision {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15%;
+}
+
+.text {
+  padding: 5%;
+  width: 50%;
+  height: 100%;
+  padding-bottom: 0%;
+}
+
+.text > h2 {
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 130%;
+  /* or 62px */
+  /* padding:7% 10%; */
+  color: #000000;
+}
+.text > p {
+  display: none;
+}
+/* Espacio de Supervisión */
+
+.decriptOut {
+  width: 100%;
+}
+.decriptOut > p {
+  text-align: justify;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 130%;
+  /* or 36px */
+  padding: 5%;
+
+  color: #000000;
+}
+.imgColorBig {
+  display: none;
+}
+.imgColor {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.color {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  background: #f7f3f3;
+  /* padding-bottom: 2%; */
+}
+.image {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* Rectangle 15 */
+.fotNotas {
+  width: 80%;
+}
+
+/* Contacto */
+
+.contact {
+  scroll-margin-top: 5.625rem;
+  /* display: flex;
+  align-items: stretch; /* 🔧 Fuerza igual altura entre columnas */
+  flex-wrap: wrap; */
+}
+
+
+.formColor {
+  background-color: #ae8586;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6%;
+  position: relative;
+
+}
+
+
+.formColor > h1 {
+  left: calc(50% - 33.25rem / 2 + 18.25rem);
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 130%;
+  color: #ffffff;
+  padding-top: 5%;
+}
+
+.formColor > P{
+  width: 80%;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size:0.8rem;
+line-height: 130%;
+/* or 36px */
+
+color: #FFFFFF;
+
+
+}
+form > button {
+  background-color: #32445a;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10%;
+}
+/* input, textarea {
+  box-sizing: border-box;
+} */
+
+input {
+  width: 40%;
+  height: 2.375rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+input::placeholder {
+  padding-left: 5%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 130%;
+  color: #000000;
+}
+
+
+textarea {
+  width: calc(40% + 40% + 1.25rem + 4px); /* ahora estará alineado */;
+  height: 6rem;
+  margin-bottom: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+textarea::placeholder {
+  padding-top: 2%;
+  padding-left: 2%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 130%;
+  color: #000000;
+}
+
+.contact-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  align-self: flex-end; /* 🔹 aquí alineas este grupo a la derecha */
+
+}
+
+.contact-links a {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.contact-links a:hover {
+  transform: scale(1.1);
+}
+
+.contact-links img {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+@media (min-width: 412px) {
+  .text > h2 {
+    font-size: 1.5rem;
+  }
+
+  .decriptOut > p {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles grandes (≥ 576px) */
+@media (min-width: 576px) {
+  /* Cambios leves en tipografía o márgenes */
+  .title {
+    margin-top: 10%;
+    margin-left: 4%;
+    /* transform: translate(0px, 35%); */
+  }
+
+  .navbar-brand {
+    margin-left: 4%;
+  }
+
+  .card {
+    width: 60%;
+  }
+  .titleC {
+    transform: translateX(-15%);
+  }
+
+  .rond {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+  .text > p {
+    display: block;
+  }
+  .decriptOut {
+    display: none;
+  }
+  .fotNotas {
+    width: 100%;
+  }
+  .text > h2 {
+    font-size: 1.25rem;
+  }
+
+  .text > p {
+    font-size: 0.8rem;
+  }
+
+
+.formColor > h1 {
+  font-size: 1.5rem;
+}
+
+.formColor > P{
+font-size:1rem;
+}
+
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  /* Cambios de layout: nav horizontal, contenido en 2 columnas, etc. */
+
+  header {
+    height: 50vh;
+  }
+  .navbar-brand {
+    margin-left: 4%;
+  }
+  .title {
+    margin-top: 8%;
+    margin-left: 4%;
+  }
+  .title > h1 {
+    font-size: 1.5rem;
+  }
+
+  .title > p {
+    font-size: 1rem;
+  }
+
+  .presentation > h1 {
+    font-size: 1.75rem;
+  }
+  .whoDes {
+    font-size: 1rem;
+  }
+  .expand {
+    font-size: 1rem;
+  }
+  .titleC {
+    transform: translateX(-9%);
+  }
+
+  .contenido > h1 {
+    font-size: 1.75rem;
+    padding-bottom: 1 0.5rem;
+  }
+
+  .contenido > p {
+    font-size: 1.25rem;
+  }
+
+  .rectangles {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .servicios > h1 {
+    font-size: 1.75rem;
+  }
+  .cont {
+    width: 30%;
+    padding: 2% 2%;
+  }
+
+  .text > h2 {
+    font-size: 1.5rem;
+  }
+
+  .text > p {
+    font-size: 1rem;
+  }
+}
+
+/* Laptops (≥ 992px) */
+@media (min-width: 992px) {
+  /* Más espacio, tamaños de fuente mayores, secciones más anchas */
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 80px;
+    margin-top: 0 !important;
+  }
+
+  .collapse.navbar-collapse {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    display: flex !important;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 0 0.75rem;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .somos {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .presentation > h1 {
+    font-size: 2rem;
+  }
+  .whoDes {
+    font-size: 1.2rem;
+  }
+  .expand {
+    font-size: 1rem;
+  }
+  .vitrina {
+    flex-direction: row;
+    height: 30rem;
+    margin-bottom: 30rem;
+  }
+  .carousel-wrapper {
+    width: 50%;
+    padding: 2rem 0;
+  }
+
+  .titleC {
+    transform: translateX(-15%);
+  }
+  .rond {
+    width: 6.625rem;
+    height: 6.625rem;
+  }
+  .servicios > h1 {
+    font-size: 2rem;
+  }
+  .imgColor {
+    display: none;
+  }
+
+  .imgColorBig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textB {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 5%;
+  }
+
+  .textB > h2 {
+    font-family: "Kaisei HarunoUmi";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 130%;
+    /* or 62px */
+    /* padding:7% 10%; */
+    color: #000000;
+  }
+  .textB > p {
+    text-align: justify;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 130%;
+    color: #000000;
+  }
+
+  .iM {
+    position: relative;
+    flex: 1 1 30rem;
+    max-width: 50%;
+    height: auto;
+  }
+  .cR {
+    background-color: #f7f0f1; /* color rosa claro */
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    /* top: 20px; */
+    left: 20%;
+
+    z-index: 0;
+  }
+
+  .fotNotasB {
+    top: 2rem;
+    width: 70%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    display: block;
+  }
+.formColor>h1 {
+  font-size: 1.75rem;
+}
+
+.formColor{
+  width: 50%;
+}
+.contact{
+  display: flex;
+  
+}
+.contact > .img {
+
+  width: 50%;
+  height: auto;
+  background-image: url(Image/Rectangle\ 17.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+/* Escritorios grandes (≥ 1200px) */
+@media (min-width: 1200px) {
+  /* Máximo ancho, márgenes mayores, padding generoso */
+  header {
+    height: 60vh;
+  }
+
+  .title {
+    margin-left: 4%;
+  }
+  .title > h1 {
+    font-size: 2rem;
+  }
+
+  .title > p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .cardLegend > ul {
+    font-size: 1rem;
+  }
+  .cardLegend > h2 {
+    font-size: 1.5rem;
+  }
+
+  .cardLegend > h3 {
+    font-size: 1.25rem;
+  }
+  .cardLegend .btnCf {
+    font-size: 1rem;
+  }
+  .presentation > h1 {
+    font-size: 2.25rem;
+  }
+  .whoDes {
+    font-size: 1.5rem;
+  }
+  .expand {
+    font-size: 1.25rem;
+  }
+  .titleC {
+    transform: translateX(-12%);
+  }
+  cont {
+    padding: 2% 2%;
+  }
+}
+
+/* Pantallas extra grandes (≥ 1400px) */
+@media (min-width: 1400px) {
+  /* Muy opcional, para monitores ultraanchos */
+  header {
+    height: 70vh;
+  }
+  .contenido {
+    max-width: 50%;
+  }
+  .titleC {
+    transform: translateX(-9%);
+  }
+}

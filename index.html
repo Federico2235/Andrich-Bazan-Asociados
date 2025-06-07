@@ -10,23 +10,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="mobileFirst.css">
 
 </head>
 
 <body id="inicio">
-    <header >
-        <nav>
-            <a href="#inicio"><div class="logo"></div></a>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#somos">¿Quénes somos? </a></li>
-                <li><a href="#servicios">Servicios </a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
 
-            </ul>
+            <a href="#inicio" class="navbar-brand">
+                <div class="logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-5"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item me-5"><a class="nav-link" href="#somos">¿Quiénes somos?</a></li>
+                    <li class="nav-item me-5"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
 
         </nav>
+
 
         <div class="title">
             <h1>Consultora Psicojurídica <br> Andrich-Bazán & Asociados</h1>
@@ -40,108 +51,230 @@
     <main>
 
         <section id="somos" class="who">
+            <div class="presentation ">
+                <h1>¿Quiénes somos?</h1>
+                <p class="whoDes">En Andrich-Bazan & Asociados contamos con un
+                    equipo multidisciplinario, con amplia experiencia en el ámbito psicojurídico.
+                    Nuestro objetivo es ofrecer un servicio personalizado y adaptado a las necesidades
+                    de estudios jurídicos, empresas y particulares, basándonos en nuestra experiencia pericial y
+                    en una continua actualización profesional.</p>
+            </div>
 
-            <h1>¿Quiénes somos?</h1>
             <div class="somos">
                 <div class="card">
-                    <img src="Image/Flor psi.png" alt="">
+                    <img src="Image/Rectangle 6.png" alt="">
                     <div class="cardLegend">
                         <h2>Florencia Andrich</h2>
                         <h3>Lic. en Psicologia (UBA)</h3>
+                        <div id="expandC1" class="expand">
+                            <ul>
+                                <li><b>Matricula:</b> MP 54035 - MN 54403 </li>
+                                <li><b>Especialización:</b> Psicología Jurídica
+                                    con orientación psicoanalítica (Col. Psi.
+                                    Distrito XI)</li>
+                                <li><b>Perito Psicóloga</b></li>
+                            </ul>
 
-                        <ul>
-                            <li><strong>Matricula:</strong> MP 54035 - MN 54403 </li>
-                            <li><strong>Especialización:</strong> Psicología Jurídica
-                                con orientación psicoanalítica (Col. Psi.
-                                Distrito XI)</li>
-                            <li><strong>Perito Psicóloga</strong></li>
-                        </ul>
-
-                        <h3 class="btnCf"> Certificaciones</h3>
-                        <ul>
-                            <li>Programa de Actualización en
-                                Psicoanálisis aplicado a los dispositivos
-                                asistenciales (Col. Psi. Distrito XI)</li>
-                            <li>
-                                Curso de Capacitación en Práctica
-                                Procesal (AC 2728 SCBA)</li>
-                            <li>
-                                Curso de Técnicas Psicométricas y
-                                Proyectivas (Grupo APF)</li>
-                            <li> Curso de Posgrado de Actualización en
-                                La Práctica Pericial Psicológica (FePRA)</li>
-                        </ul>
-                        <h3 class="btnCf"> Formaciones</h3>
-                        <ul>
-                            <li>Daño Psíquico y Evaluación Pericial
-                                (Psicología Forense Argentina)</li>
-                            <li> Indicadores y Detección Precoz del ASI
-                                (Cursos TEA)</li>
-                        </ul>
+                            <h3 class="btnCf"> Certificaciones</h3>
+                            <ul>
+                                <li>Programa de Actualización en
+                                    Psicoanálisis aplicado a los dispositivos
+                                    asistenciales (Col. Psi. Distrito XI)</li>
+                                <li>
+                                    Curso de Capacitación en Práctica
+                                    Procesal (AC 2728 SCBA)</li>
+                                <li>
+                                    Curso de Técnicas Psicométricas y
+                                    Proyectivas (Grupo APF)</li>
+                                <li> Curso de Posgrado de Actualización en
+                                    La Práctica Pericial Psicológica (FePRA)</li>
+                            </ul>
+                            <h3 class="btnCf"> Formaciones</h3>
+                            <ul>
+                                <li>Daño Psíquico y Evaluación Pericial
+                                    (Psicología Forense Argentina)</li>
+                                <li> Indicadores y Detección Precoz del ASI
+                                    (Cursos TEA)</li>
+                            </ul>
+                        </div>
+                        <div id="extendC1" class="extendC"><img src="Image/Group.png" alt=""></div>
                     </div>
                 </div>
+
                 <div class="card">
-                    <img src="Image/Tania psi.png" alt="">
+                    <img src="Image/Rectangle 8.png" alt="">
                     <div class="cardLegend">
                         <h2> Tania Bazán</h2>
                         <h3>Lic. en Psicologia (UNC)</h3>
+                        <div id="expandC2" class="expand">
 
-                        <ul>
-                            <li><strong>Matricula:</strong> MP 35798</li>
-                            <li><strong>Perito Psicóloga</strong></li>
-                        </ul>
+                            <ul>
+                                <li><b>Matricula:</b> MP 35798</li>
+                                <li><b>Perito Psicóloga</b></li>
+                            </ul>
 
-                        <h3 class="btnCf"> Certificaciones</h3>
-                        <ul>
-                            <li>
-                                Curso de Capacitación en Práctica
-                                Procesal (AC 2728 SCBA)</li>
-                            <li>
-                                Curso de Técnicas Psicométricas y
-                                Proyectivas (Grupo APF)</li>
-                            <li> Curso de Posgrado de Actualización en
-                                La Práctica Pericial Psicológica (FePRA)</li>
-                        </ul>
+                            <h3 class="btnCf"> Certificaciones</h3>
+                            <ul>
+                                <li>
+                                    Curso de Capacitación en Práctica
+                                    Procesal (AC 2728 SCBA)</li>
+                                <li>
+                                    Curso de Técnicas Psicométricas y
+                                    Proyectivas (Grupo APF)</li>
+                                <li> Curso de Posgrado de Actualización en
+                                    La Práctica Pericial Psicológica (FePRA)</li>
+                            </ul>
 
 
-                        <h3 class="btnCf"> Formaciones</h3>
-                        <ul>
-                            <li>Daño Psíquico y Evaluación Pericial
-                                (Psicología Forense Argentina)</li>
-                            <li> Indicadores y Detección Precoz del ASI
-                                (Cursos TEA)</li>
-                        </ul>
+                            <h3 class="btnCf"> Formaciones</h3>
+                            <ul>
+                                <li>Daño Psíquico y Evaluación Pericial
+                                    (Psicología Forense Argentina)</li>
+                                <li> Indicadores y Detección Precoz del ASI
+                                    (Cursos TEA)</li>
+                            </ul>
+                        </div>
+                        <div id="extendC2" class="extendC"><img src="Image/Group.png" alt=""></div>
                     </div>
                 </div>
 
+                <div class="card">
+                    <img src="Image/ABUDARHAM 1.png" alt="">
+                    <div class="cardLegend">
+                        <h2>Tomás<br class="line-break">Abudarham</h2>
+                        <h3>Médico (UBA)</h3>
+                        <div id="expandC3" class="expand">
+                            <ul>
+                                <li><b>Matricula:</b>MP 82292 - MN 144659</li>
+                                <li><b>Especialización:</b>Psiquiatría (IUHIBA) - Médico Legista (UNSAM)
+                                </li>
+                                <li><b>Perito Psiquiatra</b></li>
+                                <li><b>Ex Docente Psiquiatría Forense:</b> Especialización en Psiquiatría
+                                    (IUHIBA)</li>
+                            </ul>
 
+                            <h3 class="btnCf"> Certificaciones</h3>
+                            <ul>
+                                <li>Capacitación en Práctica Procesal (AC 2728 SCBA)</li>
 
+                            </ul>
+                            <h3 class="btnCf"> Formaciones</h3>
+                            <ul>
+                                <li>Residencia Hospitalaria de Psiquiatría (HIBA)
+                                    Residente Visitante Serv. Neurología Cognitiva,
+                                    Neuropsiquiatría y Neuropsicología (FLENI)
+                                    Ex Instructor de Residentes de Psiquiatría (HIBA)
+                                    Carrera de Médico Legista (UNSAM)</li>
+
+                            </ul>
+                        </div>
+                        <div id="extendC3" class="extendC"><img src="Image/Group.png" alt=""></div>
+
+                    </div>
+                </div>
             </div>
-
-
-
         </section>
-        <section id="servicios" class="offer">
-
-            <div class="ofrecemos">
-
-                <img class="offerImg" src="Image/Rectangle 10.png" alt="">
 
 
-                <div class="leyenda">
-                    <h2>¿Qué ofrecemos?</h2>
-                    <p>Asesoramiento estratégico a estudios <br>
-                        jurídicos y abogados en diferentes <br>
-                        cuestiones vinculadas al campo de la <br>
-                        psicología jurídica en los fueros civil,<br>
-                        comercial, familiar, laboral y penal.
-                    </p>
+
+
+
+
+        <section id="servicios" class="vitrina">
+            <div class="contenido">
+                <h1>¿Qué ofrecemos?<br>
+                    Conoce nuestros servicios</h1>
+                <p><strong>Asesoramiento estratégico</strong> a estudios jurídicos y abogados en diversas cuestiones
+                    vinculadas al campo de la psicología jurídica en los fueros civil, comercial, familiar, laboral y
+                    penal. Además, <strong>brindamos asesoría pericial forense</strong> en diferentes áreas del derecho,
+                    abarcando:</p>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="btns"> <button class="carousel-btn prev">&lt;</button>
+                    <button class="carousel-btn next">&gt;</button>
+                </div>
+                <div class="carousel-outer">
+                    <div class="carousel-track">
+                        <div class="cardCar">
+                            <div class="titleC">
+                                <h3>Fuero Civil</h3>
+                            </div>
+                            <h4>Daños y Perjuicios</h4>
+                            <ul>
+                                <li>Evaluación del daño psíquico en víctimas de accidentes de tránsito y de la vía
+                                    pública. </li>
+                                <li>Análisis del daño psíquico por pérdida indebida de derechos y reclusión ilegal.</li>
+                                <li>Evaluación de daño psíquico asociado a condiciones de reclusión en instituciones.
+                                </li>
+                            </ul>
+
+                            <h4>Capacidad Civil</h4>
+                            <ul>
+
+                                <li>Evaluación de facultades mentales y revisión de insania bajo las nuevas normativas
+                                    de salud mental.</li>
+                                <li>Reevaluación periódica de la incapacidad civil y análisis de apoyos vinculares y
+                                    sociales.</li>
+                            </ul>
+                        </div>
+                        <div class="cardCar">
+                            <div class="titleC">
+                                <h3>Fuero Laboral</h3>
+                            </div>
+                            <h4>Daño Psíquico Laboral</h4>
+                            <ul>
+                                <li>Evaluación de enfermedades laborales y psicopatologías asociadas a condiciones
+                                    laborales. </li>
+                                <li>Cuantificación del daño psíquico por despidos injustificados y análisis de las
+                                    consecuencias del trabajo informal</li>
+                                <li>Estudio sobre Burnout y violencia laboral (mobbing), incluyendo informes
+                                    pre-diagnósticos.</li>
+                            </ul>
+
+                            <h4>Incapacitación Laboral</h4>
+                            <ul>
+
+                                <li>Estudio del reclamo por incapacitación laboral (permanente o transitoria).</li>
+                                <li>Evaluación del perfil psicológico para roles laborales de autoridad (docentes,
+                                    fuerzas de seguridad, etc.).</li>
+                            </ul>
+                        </div>
+                        <div class="cardCar">
+                            <div class="titleC">
+                                <h3>Fuero Penal</h3>
+                            </div>
+
+                            <h4>Responsabilidad Penal</h4>
+                            <ul>
+                                <li>Evaluación de estados de necesidad justificantes y aspectos psicológicos vinculados
+                                    a la conducta.</li>
+                                <li>Análisis de la emoción violenta y sus causas psicológicas.</li>
+                            </ul>
+                            <h4>Inimputabilidad</h4>
+                            <ul>
+                                <li>Determinación de condiciones de culpabilidad y aplicación de atenuantes derivadas de
+                                    discapacidades intelectuales.</li>
+                            </ul>
+                            <h4>Alternativas al Encierro y Adicciones</h4>
+                            <ul>
+                                <li>Asesoramiento sobre medidas alternativas a la prisión y evaluación de situaciones
+                                    relacionadas con adicciones.</li>
+                                <li>Informe psicodiagnóstico y evaluación de atenuantes por toxicidad.</li>
+                            </ul>
+                            <h4>Abuso Sexual y Ejecución Penal</h4>
+                            <ul>
+                                <li>Asesoría para la prevención de la re-victimización y apoyo psicológico a la víctima.
+                                </li>
+                                <li>Elaboración de informes sobre salidas anticipadas y atención al penado.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
 
         </section>
-
         <section class="servicios">
             <h1>¿Cómo podemos intervenir?</h1>
 
@@ -231,23 +364,47 @@
             </div>
 
             <div class="supervision">
-                <div class="text">
-                    <h2>Espacio de <br>
-                        Supervisión</h2>
-                    <p>Acompañamiento en los inicios <br>
-                        de la práctica forense, análisis de
-                        técnicas y elaboración de informes.</p>
 
-                </div>
                 <div class="imgColor">
-                    <div class="color"></div>
-                    <img class="fotNotas" src="Image/Rectangle 15.png" alt="">
+                    <div class="color">
+                        <div class="text">
+                            <h2>Espacio de <br>
+                                Supervisión</h2>
+                            <p>Acompañamiento en los inicios <br>
+                                de la práctica forense, análisis de
+                                técnicas y elaboración de informes.</p>
+                        </div>
+                        <div class="image">
+                            <img class="fotNotas" src="Image/Rectangle 15.png" alt="">
+                        </div>
+                        <div class="decriptOut">
+                            <p>Acompañamiento en los inicios <br>
+                                de la práctica forense, análisis de
+                                técnicas y elaboración de informes.</p>
+
+                        </div>
+                    </div>
 
                 </div>
-           
+                <div class="imgColorBig">
+
+                    <div class="textB">
+                        <h2>Espacio de <br>
+                            Supervisión</h2>
+                        <p>Acompañamiento en los inicios <br>
+                            de la práctica forense, análisis de
+                            técnicas y elaboración de informes.</p>
+                    </div>
+                    <div class="iM">
+                        <div class="cR"></div>
+
+                        <img class="fotNotasB" src="Image/Rectangle 15.png" alt="">
+
+                    </div>
+                </div>
             </div>
 
-    
+
         </section>
 
 
@@ -258,27 +415,28 @@
 
             <div class="img">
 
-            <div class="coordColor">
-                <div class="coord">
-                    <h4>¡Escribinos!</h4>
-                    <div class="tel">
-                        <div class="carre"><img src="Image/Vector W.png" alt=""></div>
-                        <p>297- 5099044 <br>11 5020-5315 </p>
+                <!-- <div class="coordColor">
+                    <div class="coord">
+                        <h4>¡Escribinos!</h4>
+                        <div class="tel">
+                            <div class="carre"><img src="Image/Vector W.png" alt=""></div>
+                            <p>297- 5099044 <br>11 5020-5315 </p>
 
-                    </div>
-                    <div>
-                        <img class="fotMail" src="Image/Group 9.png" alt="">
+                        </div>
+                        <div>
+                            <img class="fotMail" src="Image/Group 9.png" alt="">
 
+                        </div>
                     </div>
-                </div>
+                </div> -->
+
             </div>
-
-        </div>
 
             <div class="formColor">
 
                 <h1>¡Contactanos!</h1>
-
+                <P>Si necesitas asesoría especializada o más información sobre nuestros servicios, no dudes en
+                    contactarnos:</P>
                 <form action="">
                     <input type="text" placeholder="Nombre">
                     <input type="text" placeholder="Apellido">
@@ -289,7 +447,17 @@
                     <textarea name="" id="" placeholder="Motivo de consulta"></textarea>
                     <br>
                     <button>Enviar</button>
+                    <div class="contact-links">
+
+                        <a href="tel:+34123456789" aria-label="Teléfono">
+                            <img src="Image/🦆 icon _phone_.svg" alt="Teléfono">
+                        </a>
+                        <a href="mailto:contacto@consultorapsicojuridica.com" aria-label="Correo">
+                            <img src="Image/Group.svg" alt="Correo">
+                        </a>
+                    </div>
                 </form>
+
 
             </div>
 
@@ -298,5 +466,10 @@
     </footer>
 
 </body>
+<!-- Bootstrap JS Bundle (incluye Popper) -->
 <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </html>
