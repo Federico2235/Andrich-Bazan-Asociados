@@ -1,33 +1,35 @@
-for (let i = 1; i <= 3; i++) {
-  let extend = document.getElementById(`extend${i}`);
-  let expand = document.getElementById(`expand${i}`);
-  let extendImg = extend.querySelector("img");
-  extend.addEventListener("click", function () {
-    if (expand.classList.contains("open")) {
-      expand.classList.remove("open");
-      extendImg.classList.remove("rotated");
-    } else {
-      expand.classList.add("open");
-      extendImg.classList.add("rotated");
-    }
-  });
-}
+document.addEventListener("DOMContentLoaded", function () {
+  function setupExpandable(baseId, scrollTargetPrefix) {
+    for (let i = 1; i <= 3; i++) {
+      const toggle = document.getElementById(`${baseId}${i}`);
+      const content = document.getElementById(`${baseId === "extend" ? "expand" : "expandC"}${i}`);
+      const icon = toggle.querySelector("img");
+      const scrollTarget = document.getElementById(`${scrollTargetPrefix}${i}`);
 
-  for (let i = 1; i <= 3; i++) {
-    let extendC = document.getElementById(`extendC${i}`);
-    let expandC = document.getElementById(`expandC${i}`);
-    let extendImg = extendC.querySelector("img");
-    extendC.addEventListener("click", function () {
-      if (expandC.classList.contains("open")) {
-        expandC.classList.remove("open");
-        extendImg.classList.remove("rotated");
-      } else {
-        expandC.classList.add("open");
-        extendImg.classList.add("rotated");
-      }
-    });
+      toggle.addEventListener("click", () => {
+        const isOpen = content.classList.contains("open");
+
+        if (isOpen) {
+          content.classList.remove("open");
+          icon.classList.remove("rotated");
+
+          // Esperar un poco para que colapse visualmente antes de hacer scroll
+          setTimeout(() => {
+            const offset = 80; // altura del navbar
+            const targetPosition = scrollTarget.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: targetPosition, behavior: "smooth" });
+          }, 200);
+        } else {
+          content.classList.add("open");
+          icon.classList.add("rotated");
+        }
+      });
+    }
   }
-  
+
+  setupExpandable("extend", "card");
+  setupExpandable("extendC", "cardc");
+});
 
   
     const track = document.querySelector('.carousel-track');
