@@ -47,3 +47,37 @@ document.addEventListener("DOMContentLoaded", function () {
       track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
     });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.offcanvas .nav-link');
+  const offcanvasEl = document.getElementById('offcanvasTop');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+      if (offcanvas) {
+        offcanvas.hide();
+      }
+    });
+  });
+});
+
+
+
+  // Desplazamiento suave con compensación del nav fijo
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const offset = 80; // altura aproximada de tu navbar
+          const top = target.offsetTop - offset;
+          window.scrollTo({
+            top: top,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });

@@ -18,25 +18,46 @@
 
 <body id="inicio">
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+<nav class="navbar navbar-dark bg-transparent fixed-top py-0">
+  <div class="container-fluid d-flex align-items-center">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#inicio">
+      <div class="logo"></div>
+    </a>
 
-            <a href="#inicio" class="navbar-brand">
-                <div class="logo"></div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-5"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item me-5"><a class="nav-link" href="#somos">¿Quiénes somos?</a></li>
-                    <li class="nav-item me-5"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
+    <!-- Botón hamburguesa SOLO en pantallas chicas -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+      aria-controls="offcanvasTop">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </nav>
+    <!-- Menú horizontal (solo visible en pantallas grandes) -->
+    <div class="d-none d-lg-flex ms-auto align-items-center">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link px-3" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="#somos">¿Quiénes somos?</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasTop"
+  aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Menú</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav text-center">
+      <li class="nav-item"><a class="nav-link" href="#inicio" data-bs-dismiss="offcanvas">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#somos" data-bs-dismiss="offcanvas">¿Quiénes somos?</a></li>
+      <li class="nav-item"><a class="nav-link" href="#servicios" data-bs-dismiss="offcanvas">Servicios</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contacto" data-bs-dismiss="offcanvas">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
 
 
         <div class="title">
