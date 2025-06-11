@@ -22,7 +22,7 @@ header {
   padding: calc(80px + 1rem) 1rem 2rem 1rem; /* top right bottom left */
   color: white;
   background-blend-mode: multiply;
-  background: url("/images/Banner.png") 35% 84% / cover no-repeat;
+  background: url("/Andrich-Bazan-Asociados/images/Banner.png") 35% 84% / cover no-repeat;
 }
 
 
